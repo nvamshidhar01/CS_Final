@@ -32,4 +32,4 @@ Story line:
 
 6) Well: across the river
 
-7) 
+7) The Yak Shack:

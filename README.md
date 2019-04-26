@@ -26,10 +26,10 @@ Story line:
       
 2) River: You walk across the still river in hope to find someone. As a UT environment student, you believe it is your responsibility to report this to the world by taking up any remaining artifacts -- the problem is that one of the artifacts will take you back home without any recollection of your stay at the Himalaya's, so be careful in what you chose to pick up.
 
-3) 3rd 
-
 4) Abandoned Souvenir Shop: 
 
 5) Abandoned Help Lodge: 
 
 6) Well: across the river
+
+7) 

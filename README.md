@@ -28,8 +28,8 @@ Story line:
 
 4) Abandoned Souvenir Shop: 
 
-5) Abandoned Help Lodge: 
+5) Abandoned Help Lodge: It has the phone, which can be used to "beat" the game if a valid phone number is entered.  
 
-6) Well: across the river
+6) Well: It is across the river and you can pull up the bucket to find Himalayan Sea Salt.
 
-7) The Yak Shack:
+7) The Yak Shack: There are yak milling about in the shack, which is old barn.  The barn is locked, but there is a weather vane broken on the ground that you can collect and may have various uses.

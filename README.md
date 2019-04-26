@@ -33,3 +33,11 @@ Story line:
 6) Well: It is across the river and you can pull up the bucket to find Himalayan Sea Salt.
 
 7) The Yak Shack: There are yak milling about in the shack, which is old barn.  The barn is locked, but there is a weather vane broken on the ground that you can collect and may have various uses.  You can see the help lodge from here.
+
+
+Other Things:
+- 1 Intro
+- Each room dialogue
+- Help dialogue- can say at any time
+- descriptions of each artifact and each item in the room
+- list, etc to hold all of your items that you've found

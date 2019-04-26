@@ -10,8 +10,9 @@ LIST OF COMMANDS:
 
 Story line:
 
-1) Intro line, the sign: You wake up -- on an icy ground to a cold breeze gushing at you from every direction, the air is dry. You look up and there are mountain ranges surrounding you from lengths of 2,400 km. The feeling of confusion is creeping up on you -- "how did I get here?" A wooden board on your far left say, "Welcome to the Himalayas," but there is no one to be found. The view is beautiful yet ominous since ice caps are melting around you and the famous Himalayan black-necked cranes skull is surrounding you in masses. You find yourself in loss of words as you see a village flooded from afar.
-      - If it is your 
+1) Intro line, The Sign: You wake up -- on an icy ground to a cold breeze gushing at you from every direction, the air is dry. You look up and there are mountain ranges surrounding you from lengths of 2,400 km. The feeling of confusion is creeping up on you -- "how did I get here?" A wooden board on your far left say, "Welcome to the Himalayas," but there is no one to be found. The view is beautiful yet ominous since ice caps are melting around you and the famous Himalayan black-necked cranes skull is surrounding you in masses. You find yourself in loss of words as you see a village flooded from afar.
+      - If it is your first time at the sign, then you get this message.
+      - If you are returning to the sign, then you get a different message.  This message will be closer to "Welcome back to           the sign"
 
 2) If you are unsure how to begin your journey, enter "help" to access the help function.
 3) Help function:

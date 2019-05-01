@@ -1,4 +1,4 @@
-import textwrap as tw
+import textwrap as tw #https://pymotw.com/3/textwrap/
 import sys
 
 class Player: #class to store player data, like inventory, location, etc.
@@ -49,7 +49,7 @@ class Room:
         for i in (raw[n:]): #set list of objects (formatted as a list of lists containing an object and description)
             temp = []
             temp = i.split(":")
-            self.objects.append(temp)         #read defaults from room file
+            self.objects.append(temp)         #read defaults from room file https://www.pythonforbeginners.com/files/reading-and-writing-files-in-python
 
     def printInitial(self):
             print(self.title)
@@ -69,7 +69,7 @@ class Room:
             print(tw.fill(objstr, width=50))
 
 
-def goTo(room, player, ): #function to instantiate/change rooms
+def goTo(room, player): #function to instantiate/change rooms
     try:
         player.loc = room.name
         if room.visited == True:
@@ -82,6 +82,21 @@ def goTo(room, player, ): #function to instantiate/change rooms
 def dropObj(room, player, object):
     pass
 
+def pickUp(room, player, object):
+    pass
+
+def moveObj(room, player, object):
+    pass
+
+def look(player, object):
+    pass
+
+def usePhone(player): #hasn't been tested yet, just needed a home for the reference code
+    if any("batteries" in s for s in player.inventory): #https://stackoverflow.com/questions/4843158/check-if-a-python-list-item-contains-a-string-inside-another-string
+        endGame()
+    else:
+        print("It looks like the batteries are dead.")
+
 def checkInput(raw):
     if raw == "exit":
         endGame()
@@ -90,20 +105,13 @@ def checkInput(raw):
 
     #check for verbs
 
-
-def usePhone(player):
-    if any("batteries" in s for s in player.inventory):
-        endGame()
-    else:
-        print("It looks like the batteries are dead.")
-
 def endGame():
     print("exit message")
     check = input("Want to start again? (Y/N) ").lower()
     if check == "yes" or check == "y":
         main()
     else:
-        sys.exit()
+        sys.exit() #https://stackoverflow.com/questions/73663/terminating-a-python-script
 
 def main():
     player1 = Player()
@@ -124,11 +132,11 @@ def main():
 
     #print(rooms[player1.loc].filepath)
     while True:
-        try:
+        try: #https://www.w3schools.com/python/python_try_except.asp
             checkInput(input().lower())
         except RuntimeError:
             print("it looks like you fucked up")
-        except EOFError:
+        except EOFError: #https://www.programiz.com/python-programming/exceptions
             print("Please enter alphanumeric character only.")
 
 main()

@@ -1,4 +1,5 @@
 import textwrap as tw
+import sys
 
 class Player: #class to store player data, like inventory, location, etc.
     def __init__(self):
@@ -67,16 +68,46 @@ class Room:
         if len(self.objects) > 0 :
             print(tw.fill(objstr, width=50))
 
-def goTo(room, player, ): #function to instantiate/change rooms
 
+def goTo(room, player, ): #function to instantiate/change rooms
     try:
         player.loc = room.name
-        room.roomDescription()
+        if room.visited == True:
+            room.roomDescription()
+        else:
+            room.printInitial()
     except:
-        print("You cant go there")
+        print("You have entered the astral plane, good luck traveler")
+
+def dropObj(room, player, object):
+    pass
+
+def checkInput(raw):
+    if raw == "exit":
+        endGame()
+    if raw == "help":
+        print("help screen goes here")
+
+    #check for verbs
+
+
+def usePhone(player):
+    if any("batteries" in s for s in player.inventory):
+        endGame()
+    else:
+        print("It looks like the batteries are dead.")
+
+def endGame():
+    print("exit message")
+    check = input("Want to start again? (Y/N) ").lower()
+    if check == "yes" or check == "y":
+        main()
+    else:
+        sys.exit()
 
 def main():
     player1 = Player()
+    call = False
     rooms = {
     "yakshack":Room("yakshack"),
     "sign" : Room("sign"),
@@ -85,16 +116,19 @@ def main():
     "lodge" : Room("lodge"),
     "well" : Room("well")
     }
+    goTo(rooms["sign"], player1)
     #rooms["yakshack"].title = "changed"
     #print(rooms["yakshack"].title)
-    sign = Room("sign")
-    river = Room("river")
-    souvenir = Room("souvenir")
-    lodge = Room("lodge")
-    well = Room("well")
-    #yakshack = Room("yakshack")
-    goTo(rooms["river"], player1)
     #print(rooms[player1.loc].filepath)
-    goTo(rooms["sign"], player1)
-    print(player1.loc)
+    #yakshack = Room("yakshack")
+
+    #print(rooms[player1.loc].filepath)
+    while True:
+        try:
+            checkInput(input().lower())
+        except RuntimeError:
+            print("it looks like you fucked up")
+        except EOFError:
+            print("Please enter alphanumeric character only.")
+
 main()

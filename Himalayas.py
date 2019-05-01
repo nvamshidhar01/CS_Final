@@ -93,7 +93,9 @@ def look(player, object):
 
 def usePhone(player): #hasn't been tested yet, just needed a home for the reference code
     if any("batteries" in s for s in player.inventory): #https://stackoverflow.com/questions/4843158/check-if-a-python-list-item-contains-a-string-inside-another-string
-        endGame()
+        phoneNum = str(input("Enter the phone number you would like to call for help: "))
+        if len(phoneNum) == 10 or len(phoneNum) == 11:
+            endGame()
     else:
         print("It looks like the batteries are dead.")
 
@@ -104,6 +106,9 @@ def checkInput(raw):
         print("help screen goes here")
 
     #check for verbs
+    
+def help():
+    pass
 
 def endGame():
     print("exit message")

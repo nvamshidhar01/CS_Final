@@ -140,7 +140,7 @@ def main():
         try: #https://www.w3schools.com/python/python_try_except.asp
             checkInput(input().lower())
         except RuntimeError:
-            print("it looks like you fucked up")
+            print("It looks like you did that incorrectly.")
         except EOFError: #https://www.programiz.com/python-programming/exceptions
             print("Please enter alphanumeric character only.")
 

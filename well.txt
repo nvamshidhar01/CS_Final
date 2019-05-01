@@ -1,0 +1,14 @@
+------------------TITLE OF ROOM------------------
+INITIAL
+blah blah
+two lines blah blah
+NORMAL
+wow blah blah blah
+blah blah
+LOCATIONS
+location1
+location2
+location3
+OBJECTS
+object1:DESCRIPTION
+object2:DESCRIPTION

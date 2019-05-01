@@ -82,6 +82,8 @@ def goTo(room, player): #function to instantiate/change rooms
 def dropObj(room, player, object):
     pass
 
+    
+
 def pickUp(room, player, object):
     pass
 
@@ -106,7 +108,7 @@ def checkInput(raw):
         print("help screen goes here")
 
     #check for verbs
-    
+
 def help():
     pass
 

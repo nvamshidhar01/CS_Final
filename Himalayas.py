@@ -90,8 +90,26 @@ def pickUp(room, player, object):
 def moveObj(room, player, object):
     pass
 
-def look(player, object):
-    pass
+def look(room,player, object):
+    b = True
+    while b==True:
+        for i in range(0,len(player.inventory)):
+            if(player.inventory[i]==object):
+                print(player.inventory[i])
+                break
+        for j in range(0,len(room.objects)):
+            if(room.objects[j][0]==object):
+                print(room.objects[j][1])
+                break
+        b = False
+ def lookAround(room,object):
+   for j in range(0,len(room.objects)):
+            if(room.objects[j][0]==object):
+                print(room.objects[j][1])
+           
+             
+                
+        
 
 def usePhone(player): #hasn't been tested yet, just needed a home for the reference code
     if any("batteries" in s for s in player.inventory): #https://stackoverflow.com/questions/4843158/check-if-a-python-list-item-contains-a-string-inside-another-string
